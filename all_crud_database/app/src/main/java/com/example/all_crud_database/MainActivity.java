@@ -14,10 +14,22 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button btnRedirectLogin, btnRedirectReg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnRedirectLogin = findViewById(R.id.btnLoginFirstScreen);
+        btnRedirectReg = findViewById(R.id.btnSignUpFirstScreen);
+
+        btnRedirectLogin.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        });
+
+        btnRedirectReg.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, SignupActivity.class));
+        });
     }
 
 }
