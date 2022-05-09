@@ -18,17 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        btnRedirectLogin = findViewById(R.id.btn_redirectLogin);
-        btnRedirectReg = findViewById(R.id.btn_redirectRegistry);
-
-        btnRedirectLogin.setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, LoginActivty.class));
-        });
-
-        btnRedirectReg.setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, RegistryActivity.class));
-        });
     }
 
 }
