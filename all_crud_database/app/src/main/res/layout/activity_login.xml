@@ -44,12 +44,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textBack" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/backIconLogin"
         android:layout_width="33dp"
         android:layout_height="28dp"
-        app:srcCompat="@drawable/back"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="28dp" />
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/textBack"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/textBack"
@@ -58,8 +61,8 @@
         android:text="Back"
         android:textColor="#111"
         android:textSize="18dp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="32dp" />
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="36dp" />
 
     <EditText
         android:id="@+id/txtEmailLogin"
